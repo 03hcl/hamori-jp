@@ -1,0 +1,4 @@
+*.fcp
+.log
+.mscbackup
+.vscode
