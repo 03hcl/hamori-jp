@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## 0.1.3 - 2023-09-25
+## [0.1.3](https://github.com/03hcl/hamori-jp/releases/tag/v0.1.3) - 2023-09-25
 
 - `[Fixed]` `_4` 割り当て修正
 - `[Fixed]` ナポリの II, 変位 VII に関連する合字が機能するよう優先順位を修正

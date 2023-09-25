@@ -31,6 +31,6 @@ OTF, WOFF, WOFF2 を用意しているので適当なものをダウンロード
 
 SIL Open Font License 1.1
 
-## [Examples](./examples.html)
+## Examples
 
-![example](./examples.jpeg)
+![examples](./examples.jpeg)
