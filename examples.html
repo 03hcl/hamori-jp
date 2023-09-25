@@ -1,0 +1,382 @@
+<html>
+  <head>
+    <title>Hamori JP Examples</title>
+
+    <style>
+      @font-face {
+        font-family: "MyFont";
+        src: url("./HamoriJP-Regular.otf");
+      }
+      .harmony {
+        font-variant-ligatures: normal;
+        font-family: "MyFont";
+        font-size: 250%;
+      }
+      table { border-collapse: collapse; }
+      td {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 120%;
+        text-align: center;
+        width: 240px;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Examples</h1>
+    <table>
+      <tbody id="converter">
+        <tr>
+          <td>I</td>
+          <td>II</td>
+          <td>III</td>
+          <td>IV</td>
+          <td>V</td>
+          <td>VI</td>
+          <td>VII</td>
+        </tr>
+        <tr>
+          <td>I^1</td>
+          <td>IV^2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V_7</td>
+          <td>V_9</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V_7^1</td>
+          <td>V_7^2</td>
+          <td>V_7^3</td>
+          <td></td>
+          <td>V^1_7</td>
+          <td></td>
+          <td>V_9^4</td>
+        </tr>
+        <tr>
+          <td>II'</td>
+          <td>V'</td>
+          <td></td>
+          <td></td>
+          <td>V'_7</td>
+          <td>V'_9</td>
+          <td>V'_9^2</td>
+        </tr>
+        <tr>
+          <td>IV_+_6</td>
+          <td>IV_+_4</td>
+          <td></td>
+          <td></td>
+          <td>IV^1_+_6</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>+III</td>
+          <td>-V</td>
+          <td>@IV</td>
+          <td>~V</td>
+          <td>@V_9^1</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>II`</td>
+          <td>VII~</td>
+          <td></td>
+          <td></td>
+          <td>@II`</td>
+          <td>II`^1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V/V</td>
+          <td>II/V</td>
+          <td></td>
+          <td></td>
+          <td>IV/V_7^3</td>
+          <td>@V/V'_9^1</td>
+          <td>II'/V</td>
+        </tr>
+        <tr>
+          <td>IV/VI</td>
+          <td>IV/!!!!!VI</td>
+          <td></td>
+          <td></td>
+          <td>VI/II_7</td>
+          <td>VI/..II_7</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>@*</td>
+          <td>@@</td>
+          <td></td>
+          <td></td>
+          <td>@*IV/V'_9^1</td>
+          <td>@@IV/V'_9^3</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>~*</td>
+          <td>+*</td>
+          <td>-*</td>
+          <td></td>
+          <td>~@</td>
+          <td>+@</td>
+          <td>-@</td>
+        </tr>
+        <tr>
+          <td>(</td>
+          <td>)</td>
+          <td></td>
+          <td></td>
+          <td>(@)VI</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>((</td>
+          <td>(*</td>
+          <td></td>
+          <td></td>
+          <td>((@~))V/V</td>
+          <td>(*@*)*V/V</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>'V</td>
+          <td>`V</td>
+          <td></td>
+          <td></td>
+          <td>@'V'_9^2</td>
+          <td>V/!!!!!!!'V_7^2</td>
+          <td>IV/!!!!!!`V_7</td>
+        </tr>
+        <tr>
+          <td>I\</td>
+          <td>V\</td>
+          <td></td>
+          <td></td>
+          <td>I\V_7</td>
+          <td>@V/V\V'_9</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>^II</td>
+          <td>^+</td>
+          <td>(((</td>
+          <td></td>
+          <td>^+^III...(((VI</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>_I</td>
+          <td>_V</td>
+          <td>[</td>
+          <td></td>
+          <td>_I...[V_7</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>_(</td>
+          <td>^(</td>
+          <td></td>
+          <td></td>
+          <td>V_(_7^1_)</td>
+          <td>I^(^2^)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>|</td>
+          <td>||</td>
+          <td></td>
+          <td></td>
+          <td>|V'_7^2|</td>
+          <td>||III/V'_9^4||</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>up</td>
+          <td>u</td>
+          <td>↑</td>
+          <td></td>
+          <td>upI</td>
+          <td>upupV</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>down</td>
+          <td>d</td>
+          <td>↓</td>
+          <td></td>
+          <td>↓V</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{1}</td>
+          <td>{3}</td>
+          <td>{5}</td>
+          <td></td>
+          <td>{0}</td>
+          <td>{</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>^^p</td>
+          <td>^^pp</td>
+          <td>^^pq</td>
+          <td>^^pd</td>
+          <td>^^p..{5}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>__q</td>
+          <td>__qq</td>
+          <td>__qp</td>
+          <td>__qu</td>
+          <td>__qu..{3}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{##}</td>
+          <td>{#}</td>
+          <td>{n}</td>
+          <td>{b}</td>
+          <td>{bb}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>II^</td>
+          <td>II^0</td>
+          <td></td>
+          <td></td>
+          <td>V_</td>
+          <td>V_0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V_7^</td>
+          <td>V_7^0</td>
+          <td>V^0_7</td>
+          <td></td>
+          <td>V^2_</td>
+          <td>V^2_0</td>
+          <td>V_0^2</td>
+        </tr>
+        <tr>
+          <td>V_0^</td>
+          <td>V_0^0</td>
+          <td>V^0_</td>
+          <td>V^0_0</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>^^</td>
+          <td>/</td>
+          <td>__</td>
+          <td>\</td>
+          <td>^</td>
+          <td>_</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>:X:</td>
+          <td>:x:</td>
+          <td>^^X</td>
+          <td>^X</td>
+          <td>_X</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>''</td>
+          <td>'''</td>
+          <td>``</td>
+          <td>```</td>
+          <td>''....{7}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{/}</td>
+          <td>{//}</td>
+          <td>---</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>:III:</td>
+          <td>:VI:</td>
+          <td>:II`:</td>
+          <td>:VII~:</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{I}</td>
+          <td>{V}</td>
+          <td>{X}</td>
+          <td>{x}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>{T}</td>
+          <td>{S}</td>
+          <td>{D}</td>
+          <td>{D2}</td>
+          <td>{D6}</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      const tbody = document.getElementById("converter");
+      const tr_list = tbody.querySelectorAll("tr");
+
+      for (let i = 0; i < tr_list.length; i++) {
+        const tr_in = tr_list[i];
+        const td_list = tr_list[i].querySelectorAll("td");
+        const tr_out = document.createElement("tr");
+
+        for (let j = 0; j < td_list.length; j++) {
+          const td_in = td_list[j];
+          const td_out = document.createElement("td");
+          td_out.textContent = td_in.textContent;
+          td_out.classList.add("harmony");
+          tr_out.appendChild(td_out);
+        }
+
+        if (tr_in.nextSibling !== null) {
+          tbody.insertBefore(tr_out, tr_in.nextSibling);
+        } else {
+          tbody.appendChild(tr_out);
+        }
+      }
+    </script>
+  </body>
+</html>
